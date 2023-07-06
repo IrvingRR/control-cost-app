@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
 
     /* Font */
     --font-color: rgb(41,45,49);
-    --font: 'PT Sans', sans-serif;;
+    --font: 'PT Sans', sans-serif;
     --fs-xs: 10px;
     --fs-s: 12px;
     --fs-m: 14px;
@@ -71,6 +71,28 @@ export const GlobalStyle = createGlobalStyle`
 
     ul, li {
         list-style: none;
+    }
+
+    /* Scrollbar */
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555;
     }
 }
 

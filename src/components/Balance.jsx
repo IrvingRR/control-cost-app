@@ -15,16 +15,16 @@ export const Balance = () => {
             <BalanceValue>$1070.15</BalanceValue>
             <Statistics>
                 <StatisticsValue>
-                    <h4>Ingresos</h4>
+                    <h5>Ingresos</h5>
                     <h2>+$478.32</h2>
                 </StatisticsValue>
                 <StatisticsValue>
-                    <h4>Gastos</h4>
+                    <h5>Gastos</h5>
                     <h2>-$1452.50</h2>
                 </StatisticsValue>
             </Statistics>
             <AnalyticsButton onClick={handleToggleAnalytics}>
-                <span>Ver analiticas</span>
+                <span>{isAnalyticsVisible ? 'Ocular analitica' : 'Ver analitica'}</span>
                 {isAnalyticsVisible ? <FontAwesomeIcon icon={faChevronUp}/> : <FontAwesomeIcon icon={faChevronDown}/>}
             </AnalyticsButton>
                 <AnalyticsCard showAnalytics={isAnalyticsVisible}>

@@ -6,7 +6,7 @@ export const ButtonElement = styled.button`
     display: flex;
     align-items: center;
     gap: 5px;
-    border-radius: var(--radius);
+    border-radius: 4px;
     cursor: pointer;
     color: var(--white-color);
     font-weight: bold;

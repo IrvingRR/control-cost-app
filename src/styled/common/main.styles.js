@@ -5,6 +5,19 @@ export const Container = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+
+    .button-container {
+        position: absolute;
+        bottom: 20px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        .button-container {
+            position: relative;
+            bottom: 0;
+        }
+    }
 `;
 
 export const Content = styled.div`

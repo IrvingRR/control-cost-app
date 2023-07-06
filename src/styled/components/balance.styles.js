@@ -30,7 +30,7 @@ export const StatisticsValue = styled.div`
     flex-direction: column;
     gap: 5px;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     color: var(--success-color);
 
     &:nth-child(2) {
