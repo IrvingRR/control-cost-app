@@ -1,5 +1,5 @@
 import { Button } from "./common/Button";
-import { MonthFilter } from "./components";
+import { Balance, MonthFilter } from "./components";
 import { Container, Content } from "./styled/common/main.styles";
 import { GlobalStyle } from "./styled/globalStyles";
 
@@ -11,7 +11,7 @@ function App() {
       <Container>
         <MonthFilter/>
         <Content>
-          <h2>Balance content</h2>
+          <Balance/>
         </Content>
       </Container>
     </>

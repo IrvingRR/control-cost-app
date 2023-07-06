@@ -14,6 +14,10 @@ export const MonthsContainer = styled.ul`
         display: none;
     }
 
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
+
 `;
 
 export const MonthElement = styled.li`

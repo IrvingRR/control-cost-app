@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
 
     /* Other variables */
     --transition: 0.3s ease;
-    --radius: 5px;
+    --radius: 10px;
     --initial-border: 1px solid transparent;
     --shadow: 0px 0px 5px 0px rgba(201,201,201,0.75);
 
