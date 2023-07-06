@@ -1,3 +1,6 @@
+import { Button } from "./common/Button";
+import { MonthFilter } from "./components";
+import { Container, Content } from "./styled/common/main.styles";
 import { GlobalStyle } from "./styled/globalStyles";
 
 function App() {
@@ -5,7 +8,12 @@ function App() {
   return (
     <>
       <GlobalStyle/>
-      <h2>Costs control application</h2>
+      <Container>
+        <MonthFilter/>
+        <Content>
+          <h2>Balance content</h2>
+        </Content>
+      </Container>
     </>
   )
 }
