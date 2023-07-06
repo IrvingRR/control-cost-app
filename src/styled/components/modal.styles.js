@@ -17,7 +17,7 @@ export const ModalContainer = styled.div`
     opacity: 0;
     transition: var(--transition);
     
-    ${props => props.isModalVisible && css`
+    ${props => props.isModalOpen && css`
         transform: translateX(0);
         visibility: visible;
         opacity: 1;
