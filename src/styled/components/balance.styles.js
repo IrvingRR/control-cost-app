@@ -54,7 +54,6 @@ export const AnalyticsCard = styled.div`
     width: 100%;
     border-radius: var(--radius);
     padding: 20px;
-    /* box-shadow: var(--shadow); */
     display: flex;
     justify-content: center;
     align-items: center;

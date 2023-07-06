@@ -10,6 +10,9 @@ export const Container = styled.main`
 export const Content = styled.div`
     width: 100%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     @media screen and (min-width: 768px) {
         width: 600px;

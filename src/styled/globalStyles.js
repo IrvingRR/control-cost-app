@@ -65,6 +65,10 @@ export const GlobalStyle = createGlobalStyle`
         transition: var(--transition);
     }
 
+    button {
+        cursor: pointer;
+    }
+
     ul, li {
         list-style: none;
     }

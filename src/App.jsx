@@ -1,5 +1,4 @@
-import { Button } from "./common/Button";
-import { Balance, MonthFilter } from "./components";
+import { Balance, History, MonthFilter } from "./components";
 import { Container, Content } from "./styled/common/main.styles";
 import { GlobalStyle } from "./styled/globalStyles";
 
@@ -12,6 +11,7 @@ function App() {
         <MonthFilter/>
         <Content>
           <Balance/>
+          <History/>
         </Content>
       </Container>
     </>
