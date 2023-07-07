@@ -5,11 +5,7 @@ export const movementsReducer = (state, action) => {
     switch (action.type) {
 
         case movementsActions.readMovements: {
-            // console.log('Reading movements...');
-            return {
-                ...state,
-                movements: action.payload
-            };
+            console.log('Reading movements...');
         }
 
         case movementsActions.addMovement: 

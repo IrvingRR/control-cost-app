@@ -15,10 +15,10 @@ export const getAllMovementsService = async () => {
 
 };
 
-export const CreateMovement = async (data) => {
+export const createMovementService = async (data) => {
 
 };
 
-export const DeleteMovement = async(id) => {
+export const DeleteMovementService = async(id) => {
 
 };
