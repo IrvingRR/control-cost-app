@@ -38,6 +38,18 @@ export const HistoryCostSymbol = styled.span`
     height: 30px;
     border-radius: var(--radius);
     background-color: var(--danger-color);
+    border: var(--initial-border);
+    border-radius: 100%;
+
+    ${props => props.category === 'common' && css`
+        background-color: transparent;
+        border-color: var(--border-color);
+    `}
+
+    ${props => props.category === 'transaction' && css`
+        background-color: var(--success-color);
+        border-radius: var(--radius);
+    `}
 `;
 
 export const HistoryCostAmount = styled.h3`

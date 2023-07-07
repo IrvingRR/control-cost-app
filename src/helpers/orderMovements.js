@@ -13,5 +13,5 @@ export const orderMovements = (movements) => {
         }
     };
 
-    return newMovements;
+    return Object.values(newMovements);
 };

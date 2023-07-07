@@ -1,10 +1,10 @@
 const URL = 'http://localhost:3000/movements';
 
-export const getAllMovementsService = async () => {
+export const getMovementsService = async (filter) => {
 
     try {
         
-        const request = await fetch(URL);
+        const request = await fetch(`${URL}?month=${filter}`);
         const response = await request.json();
         
         return response;
