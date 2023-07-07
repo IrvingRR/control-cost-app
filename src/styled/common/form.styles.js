@@ -15,21 +15,6 @@ export const Form = styled.form`
     }
 `;
 
-export const TextArea = styled.textarea`
-    width: 100%;
-    height: 80px;
-    padding: 10px 20px;
-    transition: var(--transition);
-    border-color: var(--background-primary-color);
-    background-color: var(--background-primary-color);
-    border-radius: var(--radius);
-    resize: none;
-    
-    &:focus {
-        background-color: transparent;
-    }
-`;
-
 export const FormActions = styled.div`
     display: flex;
     align-items: center;

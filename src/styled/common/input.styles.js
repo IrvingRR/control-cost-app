@@ -54,5 +54,6 @@ export const Legend = styled.div`
 
 export const Label = styled.label`
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
+    font-size: var(--fs-s);
 `;
