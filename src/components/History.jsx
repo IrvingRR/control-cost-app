@@ -4,10 +4,12 @@ import { HistoryElement } from './HistoryElement';
 export const History = () => {
 
   return (
-    <HistoryContainer>
+    <>
+      <HistoryContainer>
         <HistoryElement/>
         <HistoryElement/>
         <HistoryElement/>
-    </HistoryContainer>
+      </HistoryContainer>
+    </>
   );
 };
