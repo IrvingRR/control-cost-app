@@ -1,4 +1,4 @@
-import { TextAreaElement, Field, Label } from '../styled/common/textarea.styles';
+import { TextAreaElement, Field, Label } from '../styled/common/form.styles';
 
 export const TextArea = ({ label, ...props }) => {
   return (

@@ -1,4 +1,4 @@
-import { Field, FieldContent, InputElement, Legend, Label } from '../styled/common/input.styles';
+import { Field, FieldContent, InputElement, Legend, Label } from '../styled/common/form.styles';
 
 export const Input = ({ legend, label, isValid, ...props }) => {
   return (
