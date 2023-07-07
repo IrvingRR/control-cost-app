@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         /* Colors */
         --background-primary-color: rgb(244,249,253);
         --background-secondary-color: rgb(255,255,255);
-        --gray-color: rgb(201,201,201);
+        --gray-color: rgb(245, 245, 245);
         --border-color: rgb(201,201,201);
         --white-color: rgb(255,255,255);
         
@@ -65,6 +65,7 @@ export const GlobalStyle = createGlobalStyle`
             outline: none;
             transition: var(--transition);
             border: 1px solid transparent;
+            font-family: var(--font);
         }
 
         button {

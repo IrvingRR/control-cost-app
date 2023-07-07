@@ -8,7 +8,9 @@ export const Form = styled.form`
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+    height: 100%;
+    overflow: auto;
 
     h2 {
         font-size: var(--fs-m);
@@ -19,6 +21,7 @@ export const FormActions = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 10px 0;
 `;
 
 export const Field = styled.div`
@@ -41,8 +44,8 @@ export const InputElement = styled.input`
     height: 40px;
     padding: 10px 20px;
     transition: var(--transition);
-    border-color: var(--background-primary-color);
-    background-color: var(--background-primary-color);
+    border-color: var(--gray-color);
+    background-color: var(--gray-color);
     border-radius: var(--radius);
     
     &:focus {
@@ -84,11 +87,24 @@ export const TextAreaElement = styled.textarea`
     height: 80px;
     padding: 10px 20px;
     transition: var(--transition);
-    border-color: var(--background-primary-color);
-    background-color: var(--background-primary-color);
+    border-color: var(--gray-color);
+    background-color: var(--gray-color);
     border-radius: var(--radius);
     resize: none;
     
+    &:focus {
+        background-color: transparent;
+    }
+`;
+
+export const Select = styled.select`
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    background-color: var(--gray-color);
+    border-color: var(--gray-color);
+    cursor: pointer;
+
     &:focus {
         background-color: transparent;
     }
