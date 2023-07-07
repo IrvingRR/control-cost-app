@@ -10,7 +10,7 @@ export const ModalContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-primary-color);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     transform: translateX(-100%);
     visibility: hidden;
@@ -22,6 +22,15 @@ export const ModalContainer = styled.div`
         visibility: visible;
         opacity: 1;
     `}
+    
+    @media screen and (min-width: 768px) {
+        transform: translate(0, -100%);
+
+        ${props => props.isModalOpen && css`
+            transform: translate(0, 0);
+        `}
+        
+    }
 `;
 
 export const ButtonCloseModal = styled.button`
@@ -30,7 +39,7 @@ export const ButtonCloseModal = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--font-color);
+    color: var(--white-color);
     position: absolute;
     top: 20px;
     right: 20px;
