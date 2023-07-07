@@ -1,13 +1,18 @@
+import { useState, useContext } from 'react';
 import { MonthsContainer, MonthElement } from "../styled/components/monthFilter.styles";
-import { useState } from 'react';
+import { MainContext } from '../contexts/MainContext';
 
 const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
 export const MonthFilter = () => {
 
-  const [monthSelected, setMonthSelected] = useState('Marzo');
+  const { filterMovementsByMonth, filter } = useContext(MainContext);
+  const [monthSelected, setMonthSelected] = useState(filter);
 
-  const handleSelectMonth = (mount) => { setMonthSelected(mount) };
+  const handleSelectMonth = (month) => { 
+    setMonthSelected(month);
+    filterMovementsByMonth(month);
+  };
 
   return (
     <MonthsContainer>

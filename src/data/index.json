@@ -1,114 +1,124 @@
 {
-      
-      "movements": [
-        {
-            "id": "1",
-            "title": "Buy the dinner",
-            "amount": 220.00,
-            "type": "income",
-            "category": "common",
-            "date": "06/07/2023",
-            "month": "Julio"
-        },
-
-        {
-            "id": "2",
-            "title": "Pay Netflix",
-            "amount": 130.00,
-            "type": "spent",
-            "category": "common",
-            "date": "06/07/2023",
-            "month": "Julio"
-        },
-
-        {
-            "id": "3",
-            "title": "Ana transaction",
-            "amount": 300.00,
-            "type": "income",
-            "category": "transaction",
-            "date": "08/07/2023",
-            "month": "Julio"
-        },
-
-        {
-            "id": "4",
-            "title": "Course transaction",
-            "amount": 1500.00,
-            "type": "spent",
-            "category": "pay",
-            "date": "06/07/2023",
-            "month": "Julio"
-        },
-
-        {
-            "id": "5",
-            "title": "Buy Nintendo Switch",
-            "amount": 15000.00,
-            "type": "income",
-            "category": "transaction",
-            "date": "04/02/2023",
-            "month": "Febrero"
-        },
-
-        {
-            "id": "6",
-            "title": "Buy bownless",
-            "amount": 150.00,
-            "type": "spent",
-            "category": "pay",
-            "date": "04/02/2023",
-            "month": "Febrero"
-        },
-
-        {
-            "id": "7",
-            "title": "Go to the dentist",
-            "amount": 300.00,
-            "type": "spent",
-            "category": "transaction",
-            "date": "20/12/2023",
-            "month": "Diciembre"
-        },
-
-        {
-            "id": "8",
-            "title": "Veterinarian",
-            "amount": 200.00,
-            "type": "spent",
-            "category": "pay",
-            "date": "14/03/2023",
-            "month": "Marzo"
-        },
-
-        {
-            "id": "9",
-            "title": "Pub",
-            "amount": 600.00,
-            "type": "spent",
-            "category": "common",
-            "date": "08/07/2023",
-            "month": "Julio"
-        },
-
-        {
-            "id": "10",
-            "title": "Sister party",
-            "amount": 1800.00,
-            "type": "spent",
-            "category": "common",
-            "date": "14/03/2023",
-            "month": "Marzo"
-        },
-
-        {
-            "id": "11",
-            "title": "Travel",
-            "amount": 4000.00,
-            "type": "spent",
-            "category": "common",
-            "date": "15/03/2023",
-            "month": "Marzo"
-        }
-    ]
+  "movements": [
+    {
+      "id": 1,
+      "title": "Buy the dinner",
+      "amount": 220,
+      "type": "income",
+      "category": "common",
+      "date": "06/07/2023",
+      "description": null,
+      "month": "Julio"
+    },
+    {
+      "id": "2",
+      "title": "Pay Netflix",
+      "amount": 130,
+      "type": "spent",
+      "category": "common",
+      "date": "06/07/2023",
+      "description": null,
+      "month": "Julio"
+    },
+    {
+      "id": 3,
+      "title": "Ana transaction",
+      "amount": 300,
+      "type": "income",
+      "category": "transaction",
+      "date": "08/07/2023",
+      "description": null,
+      "month": "Julio"
+    },
+    {
+      "id": 4,
+      "title": "Course transaction",
+      "amount": 1500,
+      "type": "spent",
+      "category": "pay",
+      "date": "06/07/2023",
+      "description": null,
+      "month": "Julio"
+    },
+    {
+      "id": 5,
+      "title": "Buy Nintendo Switch",
+      "amount": 15000,
+      "type": "income",
+      "category": "transaction",
+      "date": "04/02/2023",
+      "description": null,
+      "month": "Febrero"
+    },
+    {
+      "id": 6,
+      "title": "Buy bownless",
+      "amount": 150,
+      "type": "spent",
+      "category": "pay",
+      "date": "04/02/2023",
+      "description": null,
+      "month": "Febrero"
+    },
+    {
+      "id": 7,
+      "title": "Go to the dentist",
+      "amount": 300,
+      "type": "spent",
+      "category": "transaction",
+      "date": "20/12/2023",
+      "description": null,
+      "month": "Diciembre"
+    },
+    {
+      "id": 8,
+      "title": "Veterinarian",
+      "amount": 200,
+      "type": "spent",
+      "category": "pay",
+      "date": "14/03/2023",
+      "description": null,
+      "month": "Marzo"
+    },
+    {
+      "id": 9,
+      "title": "Pub",
+      "amount": 600,
+      "type": "spent",
+      "category": "common",
+      "date": "08/07/2023",
+      "description": null,
+      "month": "Julio"
+    },
+    {
+      "id": 10,
+      "title": "Sister party",
+      "amount": 1800,
+      "type": "spent",
+      "category": "common",
+      "date": "14/03/2023",
+      "description": null,
+      "month": "Marzo"
+    },
+    {
+      "id": 11,
+      "title": "Travel",
+      "amount": 4000,
+      "type": "spent",
+      "category": "common",
+      "date": "15/03/2023",
+      "description": null,
+      "month": "Marzo"
+    },
+    {
+      "title": "Gift to my friend",
+      "amount": 300,
+      "type": "spent",
+      "category": "common",
+      "date": "07/07/2023",
+      "description": null,
+      "month": "Julio",
+      "id": 12
+    }
+  ]
 }

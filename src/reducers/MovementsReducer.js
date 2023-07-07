@@ -9,7 +9,13 @@ export const movementsReducer = (state, action) => {
                 ...state,
                 movements: action.payload
             };
-        }
+        };
+
+        case movementsActions.filterMovements:
+            return {
+                ...state,
+                filter: action.payload
+            };
 
         case movementsActions.addMovement: 
             return console.log('Adding movement...');

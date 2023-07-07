@@ -9,8 +9,6 @@ export const History = () => {
   const { movements } = useContext(MainContext);
   const movementsOrdered = orderMovements(movements);
 
-  console.log('History component:', movementsOrdered);
-
   return (
     <>
       <HistoryContainer>
