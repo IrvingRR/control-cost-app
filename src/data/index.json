@@ -1,0 +1,47 @@
+{
+    "movements": [
+        {
+            "id": "1",
+            "title": "Buy the dinner",
+            "amount": 220.00,
+            "type": "spent",
+            "category": "common",
+            "date": "06/07/2023",
+            "month": "Julio",
+            "description": null
+        },
+
+        {
+            "id": "2",
+            "title": "Transaction Andrea",
+            "amount": 220.00,
+            "type": "income",
+            "category": "transaction",
+            "date": "08/07/2023",
+            "month": "Julio",
+            "description": null
+        },
+
+        {
+            "id": "3",
+            "title": "Netflix",
+            "amount": 130.00,
+            "type": "spent",
+            "category": "common",
+            "date": "02/08/2023",
+            "month": "Agosto",
+            "description": "Pay netflix service"
+        },
+
+        {
+            "id": "4",
+            "title": "Pay course",
+            "amount": 1500.00,
+            "type": "spent",
+            "category": "pay",
+            "date": "10/11/2023",
+            "month": "Noviembre",
+            "description": null
+        }
+    ]
+}

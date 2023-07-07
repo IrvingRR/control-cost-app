@@ -2,7 +2,7 @@ import { Form, FormActions } from "../styled/common/form.styles";
 import { Button, TextArea } from '../common';
 import { Input } from "../common";
 
-export const FormAddMovement = () => {
+export const FormAddMovement = ({ handleCloseModal }) => {
   return (
     <Form>
         <h2>Agregar movimiento</h2>
@@ -11,7 +11,7 @@ export const FormAddMovement = () => {
         <TextArea name='description' placeholder='Escribe una pequeña descripción' label="Descripción:"/>
         <FormActions>
             <Button label='Agregar'/>
-            <Button label='Cancelar' variant='danger'/>
+            <Button label='Cancelar' type='button' variant='danger' onClick={handleCloseModal}/>
         </FormActions>
     </Form>
   );

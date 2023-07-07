@@ -13,7 +13,7 @@ function App() {
     <GlobalStyle/>
       <Container>
         <Modal isModalOpen={isModalOpen} handleCloseModal={handleCloseModal}>
-          <FormAddMovement/>
+          <FormAddMovement handleCloseModal={handleCloseModal}/>
         </Modal>
         <MonthFilter/>
         <Content>
