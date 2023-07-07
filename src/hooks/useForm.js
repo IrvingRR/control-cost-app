@@ -35,6 +35,11 @@ export const useForm = (initialState = {}, successFunction) => {
         return invalidFields;
     };
 
+    const handleReset = (e) => {
+        setForm(initialState);
+        e.target.reset();
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -43,7 +48,7 @@ export const useForm = (initialState = {}, successFunction) => {
         if(invalidFields.length > 0) {
             alert(`Please fill the next fields: ${ invalidFields }`);
         } else {
-            successFunction();
+            successFunction(e);
         }
         
     };
@@ -51,7 +56,8 @@ export const useForm = (initialState = {}, successFunction) => {
     return {
         form, 
         handleChange,
-        handleSubmit    
+        handleSubmit,
+        handleReset
     };
 
 };
