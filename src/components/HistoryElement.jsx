@@ -4,10 +4,12 @@ import { formatDateHelper } from "../helpers";
 
 export const HistoryElement = ({ data }) => {
 
+  const formattedDate = formatDateHelper(data.date);
+
   return (
     <HistoryElementContainer>
-        {/* <strong>Hoy - 7 Jul</strong> */}
-        <strong>{ data.date }</strong>
+        <strong>{formattedDate}</strong>
+        {/* <strong>{ data.date }</strong> */}
         { 
           data.movements.map(movement => <HistoryCost key={movement.id} data={movement}/>)
         }

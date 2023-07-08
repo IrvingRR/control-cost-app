@@ -109,6 +109,26 @@
       "type": "income",
       "month": "Enero",
       "id": 11
+    },
+    {
+      "title": "Is today",
+      "amount": 100,
+      "date": "2023-07-08",
+      "description": null,
+      "category": "pay",
+      "type": "income",
+      "month": "Julio",
+      "id": 12
+    },
+    {
+      "title": "xcvxc",
+      "amount": 100,
+      "date": "2023-07-07",
+      "description": "",
+      "category": "pay",
+      "type": "income",
+      "month": "Julio",
+      "id": 13
     }
   ]
 }

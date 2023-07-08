@@ -13,5 +13,6 @@ export const orderMovementsHelper = (movements) => {
         }
     };
 
-    return Object.values(newMovements);
+    let sortMovements = Object.values(newMovements).sort((x, y) => x.date.localeCompare(y.date));
+    return sortMovements;
 };
