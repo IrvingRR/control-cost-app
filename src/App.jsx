@@ -1,7 +1,7 @@
 import { GlobalStyle } from "./styled/globalStyles";
 import { Balance, FormAddMovement, History, Modal, MonthFilter } from "./components";
 import { Container, Content } from "./styled/common/main.styles";
-import { Button } from './common';
+import { Button, Loader } from './common';
 import { useModal } from './hooks';
 import { MainProvider } from "./contexts/MainContext";
 
@@ -18,6 +18,7 @@ function App() {
           </Modal>
           <MonthFilter/>
           <Content>
+            <Loader/>
             <Balance/>
             <History/>
           </Content>

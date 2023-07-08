@@ -8,3 +8,12 @@ export const HistoryContainer = styled.div`
     flex-direction: column;
     gap: 20px;
 `;
+
+export const HistoryMessage = styled.h4`
+    width: 100%;
+    text-align: center;
+
+    span {
+        color: var(--primary-color);
+    }
+`;

@@ -9,7 +9,7 @@ import { createMovementService } from '../services/movements';
 
 export const FormAddMovement = ({ handleCloseModal }) => {
 
-  const { createMovement, filterMovementsByMonth } = useContext(MainContext);
+  const { createMovement, filterMovementsByMonth, startLoading, stopLoading } = useContext(MainContext);
 
   const initialValues = {
     title: {  value: null, required: true },
@@ -22,6 +22,7 @@ export const FormAddMovement = ({ handleCloseModal }) => {
 
   const successFunction = async (e) => {
 
+    startLoading();
     const data = prepareDataHelper(form);
     data.month = getMonthHelper(data.date);
 
@@ -31,6 +32,8 @@ export const FormAddMovement = ({ handleCloseModal }) => {
     
     handleCloseModal();
     handleReset(e);
+    stopLoading()
+
   };
 
   const { form, handleChange, handleSubmit, handleReset } = useForm(initialValues, successFunction);

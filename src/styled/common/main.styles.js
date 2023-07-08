@@ -22,10 +22,11 @@ export const Container = styled.main`
 
 export const Content = styled.div`
     width: 100%;
-    padding: 20px;
+    padding: 70px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow: auto;
 
     @media screen and (min-width: 768px) {
         width: 500px;

@@ -11,17 +11,19 @@ export const movementsReducer = (state, action) => {
             };
         };
 
-        case movementsActions.filterMovements:
+        case movementsActions.filterMovements: {
             return {
                 ...state,
                 filter: action.payload
             };
+        }
 
-        case movementsActions.addMovement: 
+        case movementsActions.addMovement: {
             return {
                 ...state,
                 movements: [...state.movements, action.payload]
             };
+        }
 
         case movementsActions.deleteMovement: {
             return {
@@ -30,6 +32,19 @@ export const movementsReducer = (state, action) => {
             };
         };
         
+        case movementsActions.startLoading: {
+            return {
+                ...state,
+                isLoading: true
+            };
+        };
+
+        case movementsActions.stopLoading: {
+            return {
+                ...state,
+                isLoading: false
+            }
+        }
         default: return state;
 
     };

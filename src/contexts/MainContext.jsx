@@ -10,6 +10,7 @@ const MainProvider = ({ children }) => {
     const initialState = {
         movements: [],
         filter: 'Enero',
+        isLoading: false
     };
 
     const [state, dispatch] = useReducer(movementsReducer, initialState);
@@ -20,12 +21,16 @@ const MainProvider = ({ children }) => {
 
     const readMovements = async () => {
 
+        startLoading();
+
         const movementsDB = await getMovementsService(state.filter);
         
         const action = {
             type: movementsActions.readMovements,
             payload: movementsDB
         };
+
+        stopLoading();
 
         dispatch(action);
     };
@@ -55,14 +60,33 @@ const MainProvider = ({ children }) => {
         };
 
         dispatch(action);
-    }
+    };
+
+    const startLoading = () => {
+        const action = {
+            type: movementsActions.startLoading,
+        };
+
+        dispatch(action);
+    };
+
+    const stopLoading = () => {
+        const action = {
+            type: movementsActions.stopLoading,
+        };
+
+        dispatch(action);
+    };
 
     const valueProvider = {
         movements: state.movements,
         filter: state.filter,
+        isLoading: state.isLoading,
         filterMovementsByMonth,
         createMovement,
-        deleteMovement
+        deleteMovement,
+        startLoading,
+        stopLoading
     };
 
     return (

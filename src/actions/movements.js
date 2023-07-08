@@ -3,4 +3,6 @@ export const movementsActions = {
     addMovement: '@movements/ADD_MOVEMENT',
     deleteMovement: '@movements/DELETE_MOVEMENT',
     filterMovements: '@movements/FILTER_MOVEMENT',
+    startLoading: '@movements/START_LOADING',
+    stopLoading: '@movements/STOP_LOADING'
 };
