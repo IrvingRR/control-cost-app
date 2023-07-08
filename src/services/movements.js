@@ -1,5 +1,10 @@
+/**
+ * This service allows us to handle every http request to the fake api
+ */
+
 const URL = 'http://localhost:3000/movements';
 
+// This function allows us the movements from the fake api where the month is equal to the filter
 export const getMovementsService = async (filter) => {
 
     try {
@@ -15,6 +20,7 @@ export const getMovementsService = async (filter) => {
 
 };
 
+//This function is responsible for send a post request to create a new movement 
 export const createMovementService = async (data) => {
     try {
         
@@ -33,6 +39,7 @@ export const createMovementService = async (data) => {
     }
 };
 
+// This function is responsible for send a delete request to delete a movement by id
 export const deleteMovementService = async(id) => {
     try {
         

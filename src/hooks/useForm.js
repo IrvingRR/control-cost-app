@@ -1,4 +1,11 @@
-import { useState } from "react"
+import { useState } from "react";
+
+/**
+ * 
+ * @param {Oject} initialState: Are the initial values which has the form 
+ * @param {Function} successFunction: Is the function which will be called when the form is correctly fill 
+ * @returns An object thie every function to handle the values and the new values
+ */
 
 export const useForm = (initialState = {}, successFunction) => {
 

@@ -1,5 +1,12 @@
 import { getMonthHelper } from "./getMonth";
 
+/**
+ * This helper is responsible for return the date with the correct format
+ * @param {Date} date: Is the date which we want to apply the correct format
+ * @returns {String} dateFormatted: Is the correct date formatted
+ */
+
+// This function is responsible for getting the yesterday date
 const yesterdayDate = () => {
     const today = new Date();
     const DAY_IN_MILSECONDS = 24 * 60 * 60 * 1000;
@@ -7,7 +14,7 @@ const yesterdayDate = () => {
     return yesterday;
 }
 
- 
+// This function allows us to apply the correct format to the date received as param
 export const formatDateHelper = (date) => {
     if(!date) return;
     const today = new Date();

@@ -4,6 +4,11 @@ import { faChevronDown, faChevronUp, faArrowDownShortWide, faArrowUpShortWide } 
 import { BalanceCard, BalanceValue, Statistics, StatisticsValue, AnalyticsCard, AnalyticsElement, AnalyticsButton, AnalyticsContent } from "../styled/components/balance.styles";
 import { MainContext } from '../contexts/MainContext';
 
+/**
+ * This is the component which will be displayed all information about the balance
+ * using the incomes and spents values. As well this components will display the analytics values
+ */
+
 export const Balance = () => {
 
     const [isAnalyticsVisible, setIsAnalyticsVisible] = useState(false);
@@ -11,10 +16,12 @@ export const Balance = () => {
 
     const handleToggleAnalytics = () => setIsAnalyticsVisible(!isAnalyticsVisible);
 
+    // Get total value of incomes and spents to display in the component
     const incomes = movements.filter(movement => movement.type === 'income').reduce((acc, movement) => acc + movement.amount, 0);
     const spents = movements.filter(movement => movement.type === 'spent').reduce((acc, movement) => acc + movement.amount, 0);
     const balance = incomes - spents;
 
+    // Get the percentage of incomes and spents
     const incomesPercent = Math.floor((incomes * 100) / balance);
     const spentsPercent = Math.floor((spents * 100) / balance);
 

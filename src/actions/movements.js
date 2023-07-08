@@ -1,3 +1,5 @@
+// Actions to use within reducer MovementsReducer
+
 export const movementsActions = {
     readMovements: '@movements/READ_MOVEMENTS',
     addMovement: '@movements/ADD_MOVEMENT',

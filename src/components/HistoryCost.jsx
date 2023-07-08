@@ -6,13 +6,20 @@ import { Button } from '../common';
 import { MainContext } from '../contexts/MainContext';
 import { deleteMovementService } from '../services/movements';
 
+/**
+ * This component is responsible for render the information about every movement
+ * @param {Object} data: This param get all specific data of the cost to display in the component 
+ */
+
 export const HistoryCost = ({ data }) => {
 
     const { deleteMovement } = useContext(MainContext);
     const [isInformationVisible, setIsInformationVisible] = useState(false);
 
+    // This function allow us to show and hidden the extra information of the movement
     const handleToggleInformation = () => setIsInformationVisible(!isInformationVisible);
     
+    // This function is responsible for delete a specific movement and execute tha action deleteMovement
     const handleDeleteMovement = async () => {
         await deleteMovementService(data.id);
         deleteMovement(data.id);

@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {Array} movements: Are the movements which we want to order 
+ * @returns The movements ordered
+ */
+
 export const orderMovementsHelper = (movements) => {
     const newMovements = {};
 

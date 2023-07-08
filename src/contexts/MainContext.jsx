@@ -3,6 +3,11 @@ import { movementsReducer } from "../reducers/MovementsReducer";
 import { getMovementsService } from "../services/movements";
 import { movementsActions } from "../actions/movements";
 
+/**
+ * This is the context which allows us to handle the global state of the movements
+ * @param {Any} children: Will be all components which will receive the global state
+ */
+
 const MainContext = createContext();
 
 const MainProvider = ({ children }) => {
@@ -19,6 +24,7 @@ const MainProvider = ({ children }) => {
         readMovements();
     }, [state.filter]);
 
+    // This function executes the readMovements action of reducer
     const readMovements = async () => {
 
         startLoading();
@@ -35,6 +41,7 @@ const MainProvider = ({ children }) => {
         dispatch(action);
     };
 
+    // This function executes the filterMovements action of reducer
     const filterMovementsByMonth = (filter) => {
         const action = {
             type: movementsActions.filterMovements,
@@ -44,6 +51,7 @@ const MainProvider = ({ children }) => {
         dispatch(action);
     };
 
+    //This function executes the addMovement of reducer
     const createMovement = (movement) => {
         const action = {
             type: movementsActions.addMovement,
@@ -53,6 +61,7 @@ const MainProvider = ({ children }) => {
         dispatch(action);
     };
 
+    // This function executes the deleteMovement action of reducer
     const deleteMovement = (id) => {
         const action = {
             type: movementsActions.deleteMovement,
@@ -62,6 +71,7 @@ const MainProvider = ({ children }) => {
         dispatch(action);
     };
 
+    // This function executes the statLoading of reducer
     const startLoading = () => {
         const action = {
             type: movementsActions.startLoading,
@@ -70,6 +80,7 @@ const MainProvider = ({ children }) => {
         dispatch(action);
     };
 
+    // This function executes the stopLoading of reducer
     const stopLoading = () => {
         const action = {
             type: movementsActions.stopLoading,

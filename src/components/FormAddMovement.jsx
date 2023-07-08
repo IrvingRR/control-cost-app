@@ -7,6 +7,11 @@ import { getMonthHelper, prepareDataHelper } from "../helpers";
 import { MainContext } from "../contexts/MainContext";
 import { createMovementService } from '../services/movements';
 
+/**
+ * This component is responsible to handle the information when the user wanna to add a new movement
+ * @param {Function} handleCloseModal: This function allows to close the modal component 
+ */
+
 export const FormAddMovement = ({ handleCloseModal }) => {
 
   const { createMovement, filterMovementsByMonth, startLoading, stopLoading } = useContext(MainContext);
@@ -20,6 +25,7 @@ export const FormAddMovement = ({ handleCloseModal }) => {
     type: {  value: null, required: true },
   };
 
+  // This function is responsible for send a http request with the data of the new movement
   const successFunction = async (e) => {
 
     startLoading();
@@ -36,6 +42,7 @@ export const FormAddMovement = ({ handleCloseModal }) => {
 
   };
 
+  // Get all values and functions from useForm hook
   const { form, handleChange, handleSubmit, handleReset } = useForm(initialValues, successFunction);
 
   return (

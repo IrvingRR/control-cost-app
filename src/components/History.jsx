@@ -4,9 +4,14 @@ import { MainContext } from "../contexts/MainContext";
 import { orderMovementsHelper } from '../helpers';
 import { HistoryElement } from './HistoryElement';
 
+/**
+ * This component is responsible for render every HistoryElement 
+ */
+
 export const History = () => {
 
   const { movements, filter } = useContext(MainContext);
+  // Get the ordered movements using the helper orderMovementsHelper
   const movementsOrdered = orderMovementsHelper(movements);
 
   return (
