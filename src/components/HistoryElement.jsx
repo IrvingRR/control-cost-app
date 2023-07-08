@@ -9,7 +9,6 @@ export const HistoryElement = ({ data }) => {
   return (
     <HistoryElementContainer>
         <strong>{formattedDate}</strong>
-        {/* <strong>{ data.date }</strong> */}
         { 
           data.movements.map(movement => <HistoryCost key={movement.id} data={movement}/>)
         }

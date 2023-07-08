@@ -48,11 +48,21 @@ const MainProvider = ({ children }) => {
         dispatch(action);
     };
 
+    const deleteMovement = (id) => {
+        const action = {
+            type: movementsActions.deleteMovement,
+            payload: id
+        };
+
+        dispatch(action);
+    }
+
     const valueProvider = {
         movements: state.movements,
         filter: state.filter,
         filterMovementsByMonth,
         createMovement,
+        deleteMovement
     };
 
     return (

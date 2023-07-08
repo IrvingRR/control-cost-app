@@ -23,10 +23,13 @@ export const movementsReducer = (state, action) => {
                 movements: [...state.movements, action.payload]
             };
 
-        case movementsActions.deleteMovement: 
-            return console.log('Deleting movement...');
-
-    
+        case movementsActions.deleteMovement: {
+            return {
+                ...state,
+                movements: state.movements.filter(movement => movement.id !== action.payload)
+            };
+        };
+        
         default: return state;
 
     };

@@ -31,16 +31,6 @@
       "id": 3
     },
     {
-      "title": "Hello Julio",
-      "amount": 300,
-      "date": "2023-07-14",
-      "description": null,
-      "category": "pay",
-      "type": "spent",
-      "month": "Julio",
-      "id": 4
-    },
-    {
       "title": "Other income",
       "amount": 100,
       "date": "2023-05-16",
@@ -81,16 +71,6 @@
       "id": 8
     },
     {
-      "title": "Netflix",
-      "amount": 300,
-      "date": "2023-01-11",
-      "description": null,
-      "category": "pay",
-      "type": "spent",
-      "month": "Enero",
-      "id": 9
-    },
-    {
       "title": "Pago de la quincena",
       "amount": 7500,
       "date": "2023-02-14",
@@ -101,16 +81,6 @@
       "id": 10
     },
     {
-      "title": "Pago quincenal",
-      "amount": 7500,
-      "date": "2023-01-14",
-      "description": null,
-      "category": "pay",
-      "type": "income",
-      "month": "Enero",
-      "id": 11
-    },
-    {
       "title": "Is today",
       "amount": 100,
       "date": "2023-07-08",
@@ -119,16 +89,6 @@
       "type": "income",
       "month": "Julio",
       "id": 12
-    },
-    {
-      "title": "xcvxc",
-      "amount": 100,
-      "date": "2023-07-07",
-      "description": "",
-      "category": "pay",
-      "type": "income",
-      "month": "Julio",
-      "id": 13
     }
   ]
 }

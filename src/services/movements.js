@@ -33,6 +33,18 @@ export const createMovementService = async (data) => {
     }
 };
 
-export const DeleteMovementService = async(id) => {
+export const deleteMovementService = async(id) => {
+    try {
+        
+        const request = await fetch(`${URL}/${id}`, {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json' },
+        });
 
+        const response = await request.json();
+        return response;
+
+    } catch (error) {
+        console.log(error);
+    }
 };
