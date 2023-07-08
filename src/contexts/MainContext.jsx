@@ -10,9 +10,6 @@ const MainProvider = ({ children }) => {
     const initialState = {
         movements: [],
         filter: 'Enero',
-        incomes: 0,
-        spents: 0,
-        balance: 0
     };
 
     const [state, dispatch] = useReducer(movementsReducer, initialState);
@@ -51,34 +48,11 @@ const MainProvider = ({ children }) => {
         dispatch(action);
     };
 
-    const setIncomes = (incomes) => {
-        const action = {
-            type: movementsActions.setIncomes,
-            payload: incomes
-        };
-
-        dispatch(action);
-    };
-
-    const setSpents = (spents) => {
-        const action = {
-            type: movementsActions.setSpents,
-            payload: spents
-        };
-
-        dispatch(action);
-    }
-
     const valueProvider = {
         movements: state.movements,
         filter: state.filter,
-        incomes: state.incomes,
-        spents: state.spents,
-        balance: state.balance,
         filterMovementsByMonth,
         createMovement,
-        setIncomes,
-        setSpents
     };
 
     return (

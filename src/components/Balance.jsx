@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { BalanceCard, BalanceValue, Statistics, StatisticsValue, AnalyticsCard, AnalyticsButton } from "../styled/components/balance.styles";
@@ -7,7 +7,7 @@ import { MainContext } from '../contexts/MainContext';
 export const Balance = () => {
 
     const [isAnalyticsVisible, setIsAnalyticsVisible] = useState(false);
-    const { balance, movements } = useContext(MainContext);
+    const { movements } = useContext(MainContext);
 
     const handleToggleAnalytics = () => setIsAnalyticsVisible(!isAnalyticsVisible);
     const incomes = movements.filter(movement => movement.type === 'income')
@@ -19,7 +19,7 @@ export const Balance = () => {
     return (
         <BalanceCard>
             <h3>Balance del mes</h3>
-            <BalanceValue>${balance}</BalanceValue>
+            <BalanceValue>${ incomes - spents }</BalanceValue>
             <Statistics>
                 <StatisticsValue>
                     <h5>Ingresos</h5>

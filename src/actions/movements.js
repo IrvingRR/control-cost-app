@@ -3,6 +3,4 @@ export const movementsActions = {
     addMovement: '@movements/ADD_MOVEMENT',
     deleteMovement: '@movements/DELETE_MOVEMENT',
     filterMovements: '@movements/FILTER_MOVEMENT',
-    setIncomes: '@movements/SET_INCOMES',
-    setSpents: '@movements/SET_SPENTS',
 };

@@ -89,6 +89,26 @@
       "type": "spent",
       "month": "Enero",
       "id": 9
+    },
+    {
+      "title": "Pago de la quincena",
+      "amount": 7500,
+      "date": "2023-02-14",
+      "description": null,
+      "category": "pay",
+      "type": "income",
+      "month": "Febrero",
+      "id": 10
+    },
+    {
+      "title": "Pago quincenal",
+      "amount": 7500,
+      "date": "2023-01-14",
+      "description": null,
+      "category": "pay",
+      "type": "income",
+      "month": "Enero",
+      "id": 11
     }
   ]
 }
