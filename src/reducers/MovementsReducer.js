@@ -22,6 +22,20 @@ export const movementsReducer = (state, action) => {
                 ...state,
                 movements: [...state.movements, action.payload]
             };
+        
+        case movementsActions.setIncomes: {
+            return {
+                ...state,
+                incomes: action.payload
+            };
+        };
+
+        case movementsActions.setSpents: {
+            return {
+                ...state,
+                spents: action.payload
+            };
+        };
 
         case movementsActions.deleteMovement: 
             return console.log('Deleting movement...');

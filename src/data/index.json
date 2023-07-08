@@ -1,14 +1,94 @@
 {
   "movements": [
     {
-      "title": "Hello March",
-      "amount": 500,
-      "date": "2023-03-23",
+      "title": "Pizza",
+      "amount": 100,
+      "date": "2023-05-08",
       "description": null,
       "category": "transaction",
       "type": "income",
-      "month": "Marzo",
+      "month": "Mayo",
       "id": 1
+    },
+    {
+      "title": "Pago recibido",
+      "amount": 200,
+      "date": "2023-05-17",
+      "description": null,
+      "category": "pay",
+      "type": "income",
+      "month": "Mayo",
+      "id": 2
+    },
+    {
+      "title": "Sueldo recibido",
+      "amount": 500,
+      "date": "2023-05-16",
+      "description": null,
+      "category": "pay",
+      "type": "income",
+      "month": "Mayo",
+      "id": 3
+    },
+    {
+      "title": "Hello Julio",
+      "amount": 300,
+      "date": "2023-07-14",
+      "description": null,
+      "category": "pay",
+      "type": "spent",
+      "month": "Julio",
+      "id": 4
+    },
+    {
+      "title": "Other income",
+      "amount": 100,
+      "date": "2023-05-16",
+      "description": null,
+      "category": "pay",
+      "type": "income",
+      "month": "Mayo",
+      "id": 5
+    },
+    {
+      "title": "Pago de curso",
+      "amount": 2000,
+      "date": "2023-05-15",
+      "description": null,
+      "category": "pay",
+      "type": "spent",
+      "month": "Mayo",
+      "id": 6
+    },
+    {
+      "title": "dsfsdf",
+      "amount": 100,
+      "date": "2023-05-16",
+      "description": null,
+      "category": "pay",
+      "type": "income",
+      "month": "Mayo",
+      "id": 7
+    },
+    {
+      "title": "Mc Donals",
+      "amount": 500,
+      "date": "2023-05-24",
+      "description": null,
+      "category": "pay",
+      "type": "spent",
+      "month": "Mayo",
+      "id": 8
+    },
+    {
+      "title": "Netflix",
+      "amount": 300,
+      "date": "2023-01-11",
+      "description": null,
+      "category": "pay",
+      "type": "spent",
+      "month": "Enero",
+      "id": 9
     }
   ]
 }
