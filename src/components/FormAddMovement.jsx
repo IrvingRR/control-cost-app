@@ -2,7 +2,7 @@ import { Form, FormActions, Select, Field, Label } from "../styled/common/form.s
 import { Button, TextArea } from '../common';
 import { Input } from "../common";
 import { useForm } from "../hooks";
-import { getMonthHelper } from "../helpers";
+import { getMonthHelper, prepareDataHelper } from "../helpers";
 
 export const FormAddMovement = ({ handleCloseModal }) => {
 
@@ -17,17 +17,8 @@ export const FormAddMovement = ({ handleCloseModal }) => {
 
   const successFunction = (e) => {
 
-    const data = {
-      title: form.title.value,
-      amount: form.amount.value,
-      date: form.date.value,
-      description: form.description.value,
-      category: form.category.value,
-      type: form.type.value,
-      month: getMonthHelper(form.date.value)
-    };
-    
-    console.log("All it's ok", data);
+    const data = prepareDataHelper(form);
+    data.month = getMonthHelper(data.date);
     // handleReset(e);
   };
 
