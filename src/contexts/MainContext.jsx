@@ -39,8 +39,24 @@ const MainProvider = ({ children }) => {
         dispatch(action);
     };
 
+    const createMovement = (movement) => {
+        const action = {
+            type: movementsActions.addMovement,
+            payload: movement
+        };
+
+        dispatch(action);
+    }
+
+    const valueProvider = {
+        movements: state.movements,
+        filter: state.filter,
+        filterMovementsByMonth,
+        createMovement
+    };
+
     return (
-        <MainContext.Provider value={{ movements: state.movements, filter: state.filter, filterMovementsByMonth }}>
+        <MainContext.Provider value={ valueProvider }>
             { children }
         </MainContext.Provider>
     );

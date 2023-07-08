@@ -25,7 +25,7 @@ export const createMovementService = async (data) => {
         });
 
         const response = await request.json();
-        console.log(response);
+        return response;
 
 
     } catch (error) {

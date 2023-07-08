@@ -1,10 +1,15 @@
+import { useContext } from "react";
 import { Form, FormActions, Select, Field, Label } from "../styled/common/form.styles";
 import { Button, TextArea } from '../common';
 import { Input } from "../common";
 import { useForm } from "../hooks";
 import { getMonthHelper, prepareDataHelper } from "../helpers";
+import { MainContext } from "../contexts/MainContext";
+import { createMovementService } from '../services/movements';
 
 export const FormAddMovement = ({ handleCloseModal }) => {
+
+  const { createMovement } = useContext(MainContext);
 
   const initialValues = {
     title: {  value: null, required: true },
@@ -15,11 +20,16 @@ export const FormAddMovement = ({ handleCloseModal }) => {
     type: {  value: null, required: true },
   };
 
-  const successFunction = (e) => {
+  const successFunction = async (e) => {
 
     const data = prepareDataHelper(form);
     data.month = getMonthHelper(data.date);
-    // handleReset(e);
+
+    const newMovement = await createMovementService(data);
+    createMovement(newMovement);
+
+    handleCloseModal();
+    handleReset(e);
   };
 
   const { form, handleChange, handleSubmit, handleReset } = useForm(initialValues, successFunction);

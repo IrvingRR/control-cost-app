@@ -18,7 +18,10 @@ export const movementsReducer = (state, action) => {
             };
 
         case movementsActions.addMovement: 
-            return console.log('Adding movement...');
+            return {
+                ...state,
+                movements: [...state.movements, action.payload]
+            };
 
         case movementsActions.deleteMovement: 
             return console.log('Deleting movement...');
