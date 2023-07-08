@@ -7,6 +7,7 @@ This application was created using React as framework and other technologies suc
 - hooks
 - context
 - reducers
+- react-hot-toast
 
 To use this application, copy the repository to your computer and then proceed to install the packages so that you can run the application.
 

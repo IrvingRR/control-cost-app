@@ -81,16 +81,6 @@
       "id": 10
     },
     {
-      "title": "Is today",
-      "amount": 100,
-      "date": "2023-07-08",
-      "description": null,
-      "category": "pay",
-      "type": "income",
-      "month": "Julio",
-      "id": 12
-    },
-    {
       "title": "Internet service",
       "amount": 720,
       "date": "2023-02-16",
@@ -119,6 +109,16 @@
       "type": "spent",
       "month": "Enero",
       "id": 15
+    },
+    {
+      "title": "Netflix",
+      "amount": 300,
+      "date": "2023-03-14",
+      "description": null,
+      "category": "pay",
+      "type": "spent",
+      "month": "Marzo",
+      "id": 16
     }
   ]
 }

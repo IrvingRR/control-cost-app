@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 /**
  * This service allows us to handle every http request to the fake api
  */
@@ -31,6 +32,7 @@ export const createMovementService = async (data) => {
         });
 
         const response = await request.json();
+        toast.success('Movimiento agregado');
         return response;
 
 
@@ -49,6 +51,7 @@ export const deleteMovementService = async(id) => {
         });
 
         const response = await request.json();
+        toast.success('Movimiento eliminado');
         return response;
 
     } catch (error) {
