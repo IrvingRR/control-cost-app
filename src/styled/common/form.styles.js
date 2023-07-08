@@ -8,8 +8,7 @@ export const Form = styled.form`
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    height: 100%;
+    gap: 10px;
     overflow: auto;
 
     h2 {
@@ -47,6 +46,7 @@ export const InputElement = styled.input`
     border-color: var(--gray-color);
     background-color: var(--gray-color);
     border-radius: var(--radius);
+    font-size: var(--fs-s);
     
     &:focus {
         background-color: transparent;
@@ -84,7 +84,7 @@ export const Label = styled.label`
 
 export const TextAreaElement = styled.textarea`
     width: 100%;
-    height: 80px;
+    height: 50px;
     padding: 10px 20px;
     transition: var(--transition);
     border-color: var(--gray-color);
@@ -103,6 +103,7 @@ export const Select = styled.select`
     border-radius: var(--radius);
     background-color: var(--gray-color);
     border-color: var(--gray-color);
+    font-size: var(--fs-s);
     cursor: pointer;
 
     &:focus {

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Form, FormActions, Select, Field, Label } from "../styled/common/form.styles";
+import { Form, FormActions, Select } from "../styled/common/form.styles";
 import { Button, TextArea } from '../common';
 import { Input } from "../common";
 import { useForm } from "../hooks";
@@ -41,29 +41,24 @@ export const FormAddMovement = ({ handleCloseModal }) => {
   return (
     <Form onSubmit={handleSubmit}>
         <h2>Agregar movimiento</h2>
-        <Input type='text' name='title' label='Título:' onChange={handleChange} placeholder='Ejemplo: Pago de curso'/>
-        <Input type="number" name='amount' label='Cantidad:' onChange={handleChange} placeholder='0.00'/>
-        <Input type='date' name='date' label="Fecha:" onChange={handleChange}/>
-        <TextArea name='description' label='Descripción:' onChange={handleChange} placeholder='Breve descripción'/>
+        <Input type='text' name='title' onChange={handleChange} placeholder='Ejemplo: Pago de curso'/>
+        <Input type="number" name='amount' onChange={handleChange} placeholder='0.00'/>
+        <Input type='date' name='date' onChange={handleChange}/>
+        <TextArea name='description' onChange={handleChange} placeholder='Breve descripción'/>
         
-        <Field>
-          <Label>Categoría:</Label>
-          <Select name='category' onChange={handleChange} defaultValue=''>
+        <Select name='category' onChange={handleChange} defaultValue=''>
           <option selected value='' disabled>Selecciona categoría</option>
           <option value='common'>Gasto común</option>
           <option value='transaction'>Transacción</option>
           <option value='pay'>Pago</option>
         </Select>
-        </Field>
 
-        <Field>
-          <Label>Tipo de movimiento:</Label>
-          <Select name='type' onChange={handleChange} defaultValue=''>
-            <option selected value='' disabled>Selecciona tipo de movimiento</option>
-            <option value='income'>Ingreso</option>
-            <option value='spent'>Gasto</option>
-          </Select>
-        </Field>
+        <Select name='type' onChange={handleChange} defaultValue=''>
+          <option selected value='' disabled>Selecciona tipo de movimiento</option>
+          <option value='income'>Ingreso</option>
+          <option value='spent'>Gasto</option>
+        </Select>
+
         <FormActions>
             <Button label='Agregar'/>
             <Button label='Cancelar' type='button' variant='danger' onClick={handleCloseModal}/>
