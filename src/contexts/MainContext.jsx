@@ -2,6 +2,7 @@ import { createContext, useReducer, useEffect } from "react";
 import { movementsReducer } from "../reducers/MovementsReducer";
 import { getMovementsService } from "../services/movements";
 import { movementsActions } from "../actions/movements";
+import { getMonthHelper } from "../helpers/getMonth";
 
 /**
  * This is the context which allows us to handle the global state of the movements
@@ -12,9 +13,12 @@ const MainContext = createContext();
 
 const MainProvider = ({ children }) => {
 
+    const currentDate = new Date();
+    const currentMonth = getMonthHelper(currentDate);
+
     const initialState = {
         movements: [],
-        filter: 'Enero',
+        filter: currentMonth,
         isLoading: false
     };
 
