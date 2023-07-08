@@ -32,6 +32,8 @@ export const StatisticsValue = styled.div`
     align-items: center;
     padding: 5px 20px;
     color: var(--success-color);
+    font-size: var(--fs-m);
+    font-weight: bolder;
 
     &:nth-child(2) {
         color: var(--danger-color);
@@ -46,7 +48,7 @@ export const AnalyticsButton = styled.button`
     align-items: center;
     gap: 3px;
     font-size: var(--fs-s);
-    color: var(--gray-color);
+    color: #ccc;
     background-color: transparent;
 `;
 

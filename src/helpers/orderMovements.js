@@ -1,4 +1,4 @@
-export const orderMovements = (movements) => {
+export const orderMovementsHelper = (movements) => {
     const newMovements = {};
 
     for(let movement of movements) {

@@ -8,7 +8,7 @@ export const Container = styled.main`
     position: relative;
 
     .button-container {
-        position: absolute;
+        position: fixed;
         bottom: 20px;
     }
     
@@ -28,6 +28,6 @@ export const Content = styled.div`
     gap: 20px;
 
     @media screen and (min-width: 768px) {
-        width: 600px;
+        width: 500px;
     }
 `;

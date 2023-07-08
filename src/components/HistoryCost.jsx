@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import { HistoryCostContainer, HistoryContent, HistoryTitle, HistoryCostSymbol, HistoryCostActions, HistoryCostAmount, HistoryCostButton, HistoryInformation, HistoryCostTags, HistoryCostTag } from "../styled/components/historyCost.styles";
+import { HistoryCostContainer, HistoryContent, HistoryTitle, HistoryCostSymbol, HistoryCostActions, HistoryCostAmount, HistoryCostButton, HistoryInformation, HistoryActions } from "../styled/components/historyCost.styles";
+import { Button } from '../common';
 
 export const HistoryCost = ({ data }) => {
 
@@ -24,12 +25,12 @@ export const HistoryCost = ({ data }) => {
                 </HistoryCostActions>
             </HistoryContent>
             <HistoryInformation showInformation={isInformationVisible}>
-                <strong>Descripción:</strong>
+                {/* <strong>Descripción:</strong> */}
                 <p>{ data.description ? data.description : 'Sin descripción' }</p>
-                <HistoryCostTags>
-                    <HistoryCostTag typService=''>Servicio</HistoryCostTag>
-                    <HistoryCostTag typeCost='spent'>Ingreso</HistoryCostTag>
-                </HistoryCostTags>
+                <HistoryActions>
+                    <Button label='Edit' size='small'/>
+                    <Button label='Delete' variant='danger' size='small'/>
+                </HistoryActions>
             </HistoryInformation>
         </HistoryCostContainer>
     );

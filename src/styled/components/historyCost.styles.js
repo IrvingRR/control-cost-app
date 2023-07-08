@@ -16,7 +16,7 @@ export const HistoryContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
     
 `;
 
@@ -24,7 +24,7 @@ export const HistoryTitle = styled.div`
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: var(--fs-m);
+    font-size: var(--fs-s);
 `;
 
 export const HistoryCostActions = styled.div`
@@ -40,20 +40,23 @@ export const HistoryCostSymbol = styled.span`
     background-color: var(--danger-color);
     border: var(--initial-border);
     border-radius: 100%;
-
+    box-shadow: var(--shadow-danger);
+    
     ${props => props.category === 'common' && css`
-        background-color: transparent;
-        border-color: var(--border-color);
+            background-color: transparent;
+            border-color: var(--border-color);
+            box-shadow: var(--shadow);
     `}
-
+        
     ${props => props.category === 'transaction' && css`
         background-color: var(--success-color);
         border-radius: var(--radius);
+        box-shadow: var(--shadow-success);
     `}
 `;
 
 export const HistoryCostAmount = styled.h3`
-    font-size: var(--fs-l);
+    font-size: var(--fs-m);
 
     ${props => props.typeCost === 'spent' && css`
         color: var(--danger-color);
@@ -80,20 +83,19 @@ export const HistoryCostButton = styled.button`
 
 export const HistoryInformation = styled.div`
     width: 100%;
-    padding: 10px;
-    /* border: 1px solid var(--border-color); */
     font-size: var(--fs-s);
     display: flex;
     flex-direction: column;
     gap: 5px;
     height: 0;
-    padding: 0 10px;
+    padding: 0 20px;
     overflow: hidden;
     transition: var(--transition);
+    background: var(--gray-color);
 
     ${props => props.showInformation && css`
         height: auto;
-        padding: 10px;
+        padding: 10px 20px;
     `}
 `;
 
@@ -126,4 +128,11 @@ export const HistoryCostTag = styled.span`
         background-color: var(--success-color);
         color: var(--success-color-hover);
     `}
+`;
+
+export const HistoryActions = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
 `;

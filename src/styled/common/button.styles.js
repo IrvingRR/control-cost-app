@@ -60,4 +60,10 @@ export const ButtonElement = styled.button`
             background-color: var(--success-color-disabled);
         }
     `}
+
+    /* Size Small */
+    ${props => props.size === 'small' && css`
+        padding: 8px 10px;
+        font-size: var(--fs-xs);
+    `}
 `;

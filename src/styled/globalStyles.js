@@ -40,6 +40,8 @@ export const GlobalStyle = createGlobalStyle`
         --radius: 10px;
         --initial-border: 1px solid transparent;
         --shadow: 0px 0px 5px 0px rgba(201,201,201,0.75);
+        --shadow-success: 0px 0px 5px 0px var(--success-color);
+        --shadow-danger: 0px 0px 5px 0px var(--danger-color);
     }
 
     /* Reset Styles */
@@ -53,7 +55,7 @@ export const GlobalStyle = createGlobalStyle`
         body {
             background-color: var(--background-primary-color);
             color: var(--font-color);
-            font-size: var(--fs-m);
+            font-size: var(--fs-s);
             font-family: var(--font);
             min-height: 100vh;
         }
