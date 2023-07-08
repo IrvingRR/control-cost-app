@@ -9,7 +9,7 @@ import { createMovementService } from '../services/movements';
 
 export const FormAddMovement = ({ handleCloseModal }) => {
 
-  const { createMovement } = useContext(MainContext);
+  const { createMovement, filterMovementsByMonth } = useContext(MainContext);
 
   const initialValues = {
     title: {  value: null, required: true },
@@ -27,7 +27,8 @@ export const FormAddMovement = ({ handleCloseModal }) => {
 
     const newMovement = await createMovementService(data);
     createMovement(newMovement);
-
+    filterMovementsByMonth(data.month);
+    
     handleCloseModal();
     handleReset(e);
   };

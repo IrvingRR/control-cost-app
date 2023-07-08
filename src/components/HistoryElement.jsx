@@ -1,7 +1,9 @@
 import { HistoryElementContainer } from "../styled/components/historyElement.styles";
 import { HistoryCost } from "./HistoryCost";
+import { formatDateHelper } from "../helpers";
 
 export const HistoryElement = ({ data }) => {
+
   return (
     <HistoryElementContainer>
         {/* <strong>Hoy - 7 Jul</strong> */}
