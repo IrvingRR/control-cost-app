@@ -89,6 +89,26 @@
       "type": "income",
       "month": "Julio",
       "id": 12
+    },
+    {
+      "title": "Internet service",
+      "amount": 720,
+      "date": "2023-02-16",
+      "description": null,
+      "category": "pay",
+      "type": "spent",
+      "month": "Febrero",
+      "id": 13
+    },
+    {
+      "title": "Girlfriend gift",
+      "amount": 1500,
+      "date": "2023-02-14",
+      "description": null,
+      "category": "common",
+      "type": "spent",
+      "month": "Febrero",
+      "id": 14
     }
   ]
 }
