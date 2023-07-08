@@ -69,7 +69,7 @@ export const AnalyticsCard = styled.div`
     opacity: 0;
     visibility: hidden;
     
-    ${props => props.showAnalytics && css`
+    ${props => props.show === 'true' && css`
         height: 200px;
         padding: 20px;
         opacity: 1;

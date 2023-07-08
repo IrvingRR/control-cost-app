@@ -7,7 +7,7 @@ export const Loader = () => {
   const { isLoading } = useContext(MainContext);
 
   return (
-    <ContainerLoader isLoading={isLoading}>
+    <ContainerLoader loading={isLoading.toString()}>
       <Spinner/>
       <h2>Loading...</h2>
     </ContainerLoader>

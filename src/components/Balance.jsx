@@ -36,7 +36,7 @@ export const Balance = () => {
                 <span>{isAnalyticsVisible ? 'Ocular analitica' : 'Ver analitica'}</span>
                 {isAnalyticsVisible ? <FontAwesomeIcon icon={faChevronUp}/> : <FontAwesomeIcon icon={faChevronDown}/>}
             </AnalyticsButton>
-                <AnalyticsCard showAnalytics={isAnalyticsVisible}>
+                <AnalyticsCard show={isAnalyticsVisible.toString()}>
                     <h4>Analiticas porcentuales</h4>
                     <AnalyticsContent>
                         <AnalyticsElement variant='incomes'>

@@ -26,13 +26,13 @@ export const HistoryCost = ({ data }) => {
                     <strong>{data.title}</strong>
                 </HistoryTitle>
                 <HistoryCostActions>
-                    <HistoryCostAmount typeCost={data.type}>{data.type === 'spent' ? '-$' : '+$'}{data.amount}</HistoryCostAmount>
+                    <HistoryCostAmount type={data.type}>{data.type === 'spent' ? '-$' : '+$'}{data.amount}</HistoryCostAmount>
                     <HistoryCostButton onClick={handleToggleInformation}>
                         {isInformationVisible ? <FontAwesomeIcon icon={faChevronUp}/> : <FontAwesomeIcon icon={faChevronDown}/>}
                     </HistoryCostButton>
                 </HistoryCostActions>
             </HistoryContent>
-            <HistoryInformation showInformation={isInformationVisible}>
+            <HistoryInformation show={isInformationVisible.toString()}>
                 {/* <strong>Descripción:</strong> */}
                 <p>{ data.description ? data.description : 'Sin descripción' }</p>
                 <HistoryActions>

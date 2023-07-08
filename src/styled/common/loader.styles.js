@@ -17,7 +17,7 @@ export const ContainerLoader = styled.div`
     opacity: 0;
     visibility: hidden;
     
-    ${props => props.isLoading && css`
+    ${props => props.loading === 'true' && css`
         opacity: 1;
         visibility: visible;
     `}

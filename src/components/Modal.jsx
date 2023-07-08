@@ -4,7 +4,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export const Modal = ({ children, isModalOpen, handleCloseModal }) => {
   return (
-    <ModalContainer isModalOpen={isModalOpen}>
+    <ModalContainer open={isModalOpen}>
         <ButtonCloseModal onClick={handleCloseModal}>
             <FontAwesomeIcon icon={faTimes}/>
         </ButtonCloseModal>

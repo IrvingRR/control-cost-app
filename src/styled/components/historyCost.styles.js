@@ -58,11 +58,11 @@ export const HistoryCostSymbol = styled.span`
 export const HistoryCostAmount = styled.h3`
     font-size: var(--fs-m);
 
-    ${props => props.typeCost === 'spent' && css`
+    ${props => props.type === 'spent' && css`
         color: var(--danger-color);
     `}
 
-    ${props => props.typeCost === 'income' && css`
+    ${props => props.type === 'income' && css`
         color: var(--success-color);
     `}
 `;
@@ -93,7 +93,7 @@ export const HistoryInformation = styled.div`
     transition: var(--transition);
     background: var(--gray-color);
 
-    ${props => props.showInformation && css`
+    ${props => props.show === 'true' && css`
         height: auto;
         padding: 10px 20px;
     `}
